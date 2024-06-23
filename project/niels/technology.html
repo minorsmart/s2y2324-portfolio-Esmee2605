@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Homepage</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="../css/blog.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar nav-masthead navbar-expand-lg py-4 navbar-light bg-light">
+        <!-- Container wrapper -->
+        <div class="container-fluid justify-content-center">
+            <a class="navbar-brand" href="../index.html">Smart Industry</a>
+            <!-- Toggle button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Collapsible wrapper -->
+            <div class="collapse navbar-collapse flex-grow-0" id="navbarCollapse">
+                <ul class="navbar-nav text-center">
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold" aria-current="page" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold active" href="aboutme.html">Niels</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="business.html"> Business </a></li>
+                            <li><a class="dropdown-item" href="connection.html"> Connection </a></li>
+                            <li><a class="dropdown-item" href="technology.html"> Technology </a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold" href="../roy/aboutme.html">Roy</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="../roy/business.html"> Business </a></li>
+                            <li><a class="dropdown-item" href="../roy/connection.html"> Connection </a></li>
+                            <li><a class="dropdown-item" href="../roy/technology.html"> Technology </a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold" href="../esmee/aboutme.html">Esmée</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="../esmee/business.html"> Business </a></li>
+                            <li><a class="dropdown-item" href="../esmee/connection.html"> Connection </a></li>
+                            <li><a class="dropdown-item" href="../esmee/technology.html"> Technology </a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold" href="../project.html">Project</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Begin page content -->
+    <main class="container">
+        <div class="p-4 p-md-5 mb-4 mt-4 rounded" style="background-color: #00a6d1;">
+            <div class="col-lg-6 px-0">
+                <strong class="d-inline-block mb-2 text-primary-emphasis">Connection</strong>
+                <h1>API's</h1>
+                <p class="lead my-2">Het gebruik van API's op je eigen website.</p>
+                <p class="lead mb-0"><a href="connection.html" class="text-body-emphasis">Verder lezen...</a></p>
+            </div>
+        </div>
+        <div class="row mb-2">
+            <div class="col-md-6">
+                <div
+                    class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-220 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-primary-emphasis">Business</strong>
+                        <h3 class="mb-0">Bedrijfsanalyze</h3>
+                        <p class="card-text my-2">Hoe krijg je een bedrijf zo gek te innoveren.</p>
+                        <p class="mb-0"><a href="business.html" class="text-body-emphasis">Verder lezen...</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div
+                    class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-220 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-primary-emphasis">About me</strong>
+                        <h3 class="mb-0">Zelfontwikkeling</h3>
+                        <p class="card-text my-2">Je leert je hele leven.</p>
+                        <p class="mb-0"><a href="aboutme.html" class="text-body-emphasis">Verder lezen...</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row g-5">
+            <div class="col-md-8">
+                <article class="blog-post">
+                    <h2 class="display-5 link-body-emphasis mb-1" id="technology">Plantsysteem</h2>
+                    <p class="blog-post-meta">Juni 19, 2024 door Niels</p>
+                    <p>In dit artikel leg ik uit welke stappen ik heb genomen om een IoT-systeem voor een plant te maken. Het IoT-systeem maakt gebruik van sensoren en actuatoren, namelijk:</p>
+                    <ul>
+                        <li>Soil moisture sensor: Meet het vochtgehalte van de potgrond.</li>
+                        <li>DHT sensor: Meet de temperatuur en de luchtvochtigheid van de omgeving.</li>
+                        <li>LDR: Meet de hoeveelheid licht.</li>
+                        <li>RF transmitter: Stuurt een signaal om het licht aan en uit te schakelen.</li>
+                        <li>Relay: Gebruikt om een waterpomp aan en uit te zetten.</li>
+                    </ul>
+                    <p>De sensoren en actuatoren worden aangestuurd met een ESP32 microcontroller, die geprogrammeerd is met de PlatformIO-extensie in Visual Studio Code. De <a href="">code</a>, geschreven in C++, maakt het mogelijk om elke sensor en actuator afzonderlijk te testen. Ook kan de code gebruikt worden om verbinding te maken met <a href="https://docs.blynk.io/en/getting-started/what-do-i-need-to-blynk/quickstart-device-code-overview">Blynk</a> of <a href="https://randomnerdtutorials.com/esp32-influxdb/">InfluxDB</a>. In het configuratiebestand (“platform.ini”) wordt bepaald welke code naar de ESP32 wordt geüpload. Ik heb ervoor gekozen om de Blynk-app te gebruiken, zodat ik via mijn telefoon de waarden van alle sensoren kan zien en de actuatoren kan aansturen.
+                        Met werkende sensoren en actuatoren moet het systeem nog tot een geheel worden samengesteld. Hiervoor heb ik mij verdiept in het maken van een printed circuit board (PCB) en een 3D-geprint model.
+                        De PCB maakt het eenvoudig om alle componenten (sensoren, actuatoren, microcontroller) met elkaar te verbinden zonder losse draden. Mijn PCB is ontworpen met Autodesk EAGLE en ziet er als volgt uit:
+                    </p>
+                    <img src="../img/niels/pcb_schematics.png" class="img-fluid" alt="PCB schematics">
+                    <p><br>Om de componenten op de PCB aan te sluiten, heb ik gebruik gemaakt van connector headers, die ik op de PCB heb gesoldeerd. Tijdens het opnieuw testen van alle componenten die op de PCB waren aangesloten, ontdekte ik echter een fout. In mijn ontwerp maak ik gebruik van een "ground plane" (GND) waaraan alle sensoren en actuatoren zijn verbonden. Ik had echter niet gedacht aan het verbinden van de ESP32 met de ground plane, wat problemen veroorzaakte. Gelukkig kon ik gebruik maken van de PCB van Camiel. Nadat ik deze PCB opnieuw had gesoldeerd, werkten alle componenten weer correct. <br><br>
+                        De volgende stap is het maken van een 3D-geprint model om alle elektronica in te huisvesten. Als inspiratie bron heb ik dit concept gebruikt: <a href="https://www.patreon.com/posts/ai-plant-pot-101731380">AI Plant Pot</a>. Ik heb geprobeerd de plantenpot na te maken in SolidWorks 3D CAD, maar dit bleek te ambitieus. Daarom heb ik mijn model gemaakt met Tinkercad, dat minder geavanceerd is maar een veel lagere leercurve heeft. Op papier heb ik de volgende overwegingen uitgewerkt voor het maken van het model:
+                    </p>
+                    <ul>
+                        <li>De pot bestaat uit twee delen.</li>
+                        <li>Het bovenste gedeelte heeft ruimte voor de plant (>15 cm diameter).</li>
+                        <li>Ruimte voor de bedrading van de LDR en de soil moisture sensor.</li>
+                        <li>Ruimte voor de batterij, relay en PCB met DHT sensor in het onderste gedeelte.</li>
+                        <li>Een opening voor de USB-kabel in het onderste gedeelte.</li>
+                        <li>Gaten in het bovenste gedeelte en pinnen in het onderste gedeelte, zodat beide onderdelen in elkaar kunnen klikken.</li>
+                    </ul>
+                    <p>Het printen van de plantenpot duurde bijna 26 uur:</p>
+                    <img src="../img/niels/3DPrinter.jpg" class="img-fluid" alt="3D printer">
+                    <h3><br>Automatisering en Robotica</h3>
+                    <p>Met een klein groepje ben ik uitgenodigd voor een workshop "Robotica" aan de TU Delft. Na een korte rondleiding gaf Thijs Brilleman een introductie. Wat mij vooral bijbleef, was zijn overtuiging over de noodzaak van automatisering en robotisering. Hij gaf als voorbeeld het Evergreen-schip dat vastzat in het Suezkanaal, wat leidde tot aanzienlijke vertragingen in leveringen. Tijdens die periode werd duidelijk hoe afhankelijk Europa is van landen zoals China. Door de geopolitieke spanningen wereldwijd realiseert men zich dat het belangrijk is om ook zelf onderdelen en producten te produceren. Aangezien er te weinig arbeiders zijn om dit te realiseren, zal automatisering cruciaal worden. Dit zijn niet mijn woorden, maar ik zie wel het verband in zijn verhaal, althans ik zou het graag willen zien gebeuren. Vervolgens hebben we onder begeleiding van Mathijs van der Vegt zelf een robotarm mogen aansturen.</P>
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/l1f-6fXEl2Q?si=tnvQAfdjEq9qs8Xi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>    
+                </article>
+            </div>
+
+            <div class="col-md-4">
+                <div class="position-sticky" style="top: 2rem;">
+                    <div class="p-4 mb-3 bg-body-tertiary rounded">
+                        <h4 class="fst-italic">Blog</h4>
+                        <p class="mb-0">In deze blog zal ik schrijven over al mijn bezigheden tijdens de minor Smart
+                            Industry.</p>
+                    </div>
+                    <div>
+                        <h4 class="fst-italic">Recent posts</h4>
+                        <ul class="list-unstyled">
+                            <li>
+                                <a class="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top"
+                                    href="connection.html">
+                                    <svg class="bd-placeholder-img" width="100%" height="96"
+                                        xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                                        preserveAspectRatio="xMidYMid slice" focusable="false">
+                                        <image href="../img/API.png" width="100%" height="100%"/>
+                                    </svg>
+                                    <div class="col-lg-8">
+                                        <h6 class="mb-0">API's</h6>
+                                        <small class="text-body-secondary">April 24, 2024</small>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top"
+                                    href="business.html">
+                                    <svg class="bd-placeholder-img" width="100%" height="96"
+                                        xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                                        preserveAspectRatio="xMidYMid slice" focusable="false">
+                                        <image href="../img/Business.jpg" width="100%" height="100%"/>
+                                    </svg>
+                                    <div class="col-lg-8">
+                                        <h6 class="mb-0">Bedrijfsanalyze</h6>
+                                        <small class="text-body-secondary">April 24, 2024</small>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top"
+                                    href="aboutme.html">
+                                    <svg class="bd-placeholder-img" width="100%" height="96"
+                                        xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                                        preserveAspectRatio="xMidYMid slice" focusable="false">
+                                        <image href="../img/Zelfontwikkeling.png" width="100%" height="100%"/>
+                                    </svg>
+                                    <div class="col-lg-8">
+                                        <h6 class="mb-0">Zelfontwikkeling</h6>
+                                        <small class="text-body-secondary">April 24, 2024</small>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer mt-auto py-3 bg-body-tertiary">
+        <div class="container">
+            <span class="text-body-secondary">MSI portfolio - Niels Jacobs 2024</span>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
